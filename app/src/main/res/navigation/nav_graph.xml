@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/splashFragment">
+
+    <fragment
+        android:id="@+id/SignupFragment"
+        android:name="com.tasks.ecommerceadmin.presentation.signup.SignupFragment"
+        android:label="SignupFragment"
+        tools:layout="@layout/fragment_signin">
+        <action
+            android:id="@+id/action_SignupFragment_to_SigninFragment"
+            app:destination="@id/SigninFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/SigninFragment"
+        android:name="com.tasks.ecommerceadmin.presentation.signin.SigninFragment"
+        android:label="SigninFragment"
+        tools:layout="@layout/fragment_sigup">
+
+        <action
+            android:id="@+id/action_SigninFragment_to_addProductFrgament"
+            app:destination="@id/addProductFrgament" />
+        <action
+            android:id="@+id/action_SigninFragment_to_createAccountFragment"
+            app:destination="@id/createAccountFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/splashFragment"
+        android:name="com.tasks.ecommerceadmin.presentation.splash.SplashFragment"
+        android:label="SplashFragment" >
+
+        <action
+            android:id="@+id/action_splashFragment_to_addProductFrgament"
+            app:destination="@id/addProductFrgament" />
+        <action
+            android:id="@+id/action_splashFragment_to_SigninFragment"
+            app:destination="@id/SigninFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/createAccountFragment"
+        android:name="com.tasks.ecommerceadmin.presentation.signup.CreateAccountFragment"
+        android:label="CreateAccountFragment" >
+        <action
+            android:id="@+id/action_createAccountFragment_to_SignupFragment"
+            app:destination="@id/SignupFragment" />
+        <action
+            android:id="@+id/action_createAccountFragment_to_SigninFragment"
+            app:destination="@id/SigninFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addProductFrgament"
+        android:name="com.tasks.ecommerceadmin.presentation.addproduct.AddProductFragment"
+        android:label="AddProductFrgament" />
+</navigation>

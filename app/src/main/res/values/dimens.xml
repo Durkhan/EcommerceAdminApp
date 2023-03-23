@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--    sizes-->
+    <dimen name="menu_height">82dp</dimen>
+    <dimen name="menu_bg_radius">15dp</dimen>
+    <dimen name="search_bar_size">45dp</dimen>
+    <dimen name="card_size_150dp">150dp</dimen>
+
+    <!--    margins-->
+    <dimen name="margin_huge">32dp</dimen>
+    <dimen name="margin_20_dp">20dp</dimen>
+    <dimen name="margin_default">16dp</dimen>
+    <dimen name="margin_10_dp">8dp</dimen>
+    <dimen name="margin_small">8dp</dimen>
+    <dimen name="margin_medium">6dp</dimen>
+    <dimen name="margin_min">4dp</dimen>
+    <dimen name="margin_micro">2dp</dimen>
+
+
+</resources>

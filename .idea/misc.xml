@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/Durkhan/AndroidStudioProjects/EcommerceAdminApp/app/src/main/res/drawable/background_not_focused_edittext_fields.xml" value="0.1895" />
+        <entry key="..\:/Users/Durkhan/AndroidStudioProjects/EcommerceAdminApp/app/src/main/res/drawable/bg_nav_curved.xml" value="0.138" />
+        <entry key="..\:/Users/Durkhan/AndroidStudioProjects/EcommerceAdminApp/app/src/main/res/drawable/bg_pin.xml" value="0.1" />
+        <entry key="..\:/Users/Durkhan/AndroidStudioProjects/EcommerceAdminApp/app/src/main/res/drawable/button_background.xml" value="0.1" />
+        <entry key="..\:/Users/Durkhan/AndroidStudioProjects/EcommerceAdminApp/app/src/main/res/drawable/ic_add_image.xml" value="0.138" />
+        <entry key="..\:/Users/Durkhan/AndroidStudioProjects/EcommerceAdminApp/app/src/main/res/drawable/ic_back.xml" value="0.1" />
+        <entry key="..\:/Users/Durkhan/AndroidStudioProjects/EcommerceAdminApp/app/src/main/res/drawable/ic_email.xml" value="0.1" />
+        <entry key="..\:/Users/Durkhan/AndroidStudioProjects/EcommerceAdminApp/app/src/main/res/drawable/ic_password.xml" value="0.1895" />
+        <entry key="..\:/Users/Durkhan/AndroidStudioProjects/EcommerceAdminApp/app/src/main/res/drawable/pin_selectable_background.xml" value="0.1895" />
+        <entry key="..\:/Users/Durkhan/AndroidStudioProjects/EcommerceAdminApp/app/src/main/res/drawable/pin_selected_background.xml" value="0.1" />
+        <entry key="..\:/Users/Durkhan/AndroidStudioProjects/EcommerceAdminApp/app/src/main/res/drawable/toggle_show.xml" value="0.1" />
+        <entry key="..\:/Users/Durkhan/AndroidStudioProjects/EcommerceAdminApp/app/src/main/res/layout/activity_main.xml" value="0.15081521739130435" />
+        <entry key="..\:/Users/Durkhan/AndroidStudioProjects/EcommerceAdminApp/app/src/main/res/layout/add_product.xml" value="0.21784420289855072" />
+        <entry key="..\:/Users/Durkhan/AndroidStudioProjects/EcommerceAdminApp/app/src/main/res/layout/fragment_create_account.xml" value="0.21784420289855072" />
+        <entry key="..\:/Users/Durkhan/AndroidStudioProjects/EcommerceAdminApp/app/src/main/res/layout/fragment_signin.xml" value="0.21784420289855072" />
+        <entry key="..\:/Users/Durkhan/AndroidStudioProjects/EcommerceAdminApp/app/src/main/res/layout/fragment_sigup.xml" value="0.21784420289855072" />
+        <entry key="..\:/Users/Durkhan/AndroidStudioProjects/EcommerceAdminApp/app/src/main/res/layout/fragment_splash.xml" value="0.21784420289855072" />
+        <entry key="..\:/Users/Durkhan/AndroidStudioProjects/EcommerceAdminApp/app/src/main/res/layout/images.xml" value="0.4" />
+        <entry key="..\:/Users/Durkhan/AndroidStudioProjects/EcommerceAdminApp/app/src/main/res/menu/products_menu.xml" value="0.12760416666666666" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
