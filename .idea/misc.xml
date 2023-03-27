@@ -3,6 +3,7 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Android projects/EcommerceAdminApp/app/src/main/res/xml/network_security_config.xml" value="0.10416666666666667" />
         <entry key="..\:/Users/Durkhan/AndroidStudioProjects/EcommerceAdminApp/app/src/main/res/drawable/background_not_focused_edittext_fields.xml" value="0.1895" />
         <entry key="..\:/Users/Durkhan/AndroidStudioProjects/EcommerceAdminApp/app/src/main/res/drawable/bg_nav_curved.xml" value="0.138" />
         <entry key="..\:/Users/Durkhan/AndroidStudioProjects/EcommerceAdminApp/app/src/main/res/drawable/bg_pin.xml" value="0.1" />
@@ -25,7 +26,7 @@
       </map>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
   <component name="ProjectType">

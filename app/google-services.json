@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "74266561246",
+    "project_id": "ecommerceadminapp-ce06f",
+    "storage_bucket": "ecommerceadminapp-ce06f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:74266561246:android:1db92b2e7a000d2f52904f",
+        "android_client_info": {
+          "package_name": "com.tasks.ecommerceadmin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "74266561246-6vph6k3o8ejmcjtnu7hq796cnp8llsa2.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.tasks.ecommerceadmin",
+            "certificate_hash": "93796a13a2c4752d92b327ea36eb189daa25972f"
+          }
+        },
+        {
+          "client_id": "74266561246-rqbam72tqf3ig4n1bf364mbbibgl4sdk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB3_Ug3jzkX7BJ-cXXfWEKSWYM92G97OIU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "74266561246-rqbam72tqf3ig4n1bf364mbbibgl4sdk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

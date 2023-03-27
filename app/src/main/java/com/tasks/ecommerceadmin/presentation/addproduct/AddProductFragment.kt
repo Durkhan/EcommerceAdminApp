@@ -15,17 +15,17 @@ import androidx.activity.result.contract.ActivityResultContracts
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import androidx.lifecycle.lifecycleScope
-import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager.HORIZONTAL
-import androidx.recyclerview.widget.RecyclerView
-import com.cloudinary.android.MediaManager
-import com.tasks.ecommerceadmin.databinding.AddProductBinding
-import com.tasks.ecommerceadmin.presentation.addproduct.listener.OnItemClickListener
-import com.tasks.ecommerceadmin.common.*
+import com.tasks.ecommerceadmin.common.CheckViewsValid
+import com.tasks.ecommerceadmin.common.EmptyEditTextWatcher
+import com.tasks.ecommerceadmin.common.Results
+import com.tasks.ecommerceadmin.common.initMediaManager
 import com.tasks.ecommerceadmin.common.listener.UploadImageCallback
+import com.tasks.ecommerceadmin.databinding.AddProductBinding
 import com.tasks.ecommerceadmin.domain.UploadImageCloudinaryUseCase
 import com.tasks.ecommerceadmin.presentation.addproduct.adapter.ImagesAdapter
+import com.tasks.ecommerceadmin.presentation.addproduct.listener.OnItemClickListener
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.launch
 import javax.inject.Inject
@@ -115,6 +115,7 @@ class AddProductFragment:Fragment(),OnItemClickListener {
         addProductViewModel.addProductResult.observe(viewLifecycleOwner){ result ->
             when(result){
                 is Results.Success ->{
+                    addProductViewModel.sendNotification()
                     Toast.makeText(requireContext(),"Product added seccusfully",Toast.LENGTH_LONG).show()
                 }
                 is Results.Error ->{
