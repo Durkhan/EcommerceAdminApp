@@ -61,11 +61,15 @@ class AddProductFragment:Fragment(),OnItemClickListener {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
+
         _binding=AddProductBinding.inflate(inflater,container,false)
         val layoutManager = LinearLayoutManager(context,HORIZONTAL,false)
         binding.recycleview.layoutManager = layoutManager
         adapter = ImagesAdapter(imagesDistincted,this)
         binding.recycleview.adapter = adapter
+
+        context?.let { initMediaManager(it) }
+
         return binding.root
     }
 
@@ -86,10 +90,10 @@ class AddProductFragment:Fragment(),OnItemClickListener {
             addProduct()
         }
 
-        context?.let { initMediaManager(it) }
 
-        activity?.onBackPressedDispatcher?.addCallback {
-            activity?.finishAffinity()
+
+        requireActivity().onBackPressedDispatcher.addCallback {
+            requireActivity().finishAffinity()
         }
     }
 
@@ -108,15 +112,14 @@ class AddProductFragment:Fragment(),OnItemClickListener {
         val imagesStringList=stringImagesUrls.distinct()
 
         lifecycleScope.launch{
-                 addProductViewModel.addProduct(product_title,product_price.toDouble(),(product_price.toDouble().minus(50)),product_category,imagesStringList,quantity,product_color,"/${product_category}",product_brand,product_descrpition)
-                 Log.d("ImagesList",""+imagesStringList)
+                 addProductViewModel.addProduct(product_title,product_price.toDouble(),(product_price.toDouble().plus(50)),product_category,imagesStringList,quantity,product_color,"/${product_category}",product_brand,product_descrpition)
         }
 
         addProductViewModel.addProductResult.observe(viewLifecycleOwner){ result ->
             when(result){
                 is Results.Success ->{
-                    addProductViewModel.sendNotification()
-                    Toast.makeText(requireContext(),"Product added seccusfully",Toast.LENGTH_LONG).show()
+                    addProductViewModel.sendNotification("New product $product_title US $$product_price")
+                    Toast.makeText(requireContext(),"Product added successfully",Toast.LENGTH_LONG).show()
                 }
                 is Results.Error ->{
                     Toast.makeText(requireContext(),result.exception,Toast.LENGTH_LONG).show()
